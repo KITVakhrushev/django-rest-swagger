@@ -36,7 +36,7 @@ $(function () {
   window.swaggerUi = new SwaggerUi(settings);
 
   window.swaggerUi.load();
-  window.swaggerUi.api.setSchemes([window.location.protocol.replace(':', '')]);
+  window.swaggerUi.api.setSchemes(['https']);
 
   function addCsrfTokenHeaders() {
     var token = $('[name="csrfmiddlewaretoken"]')[0];
